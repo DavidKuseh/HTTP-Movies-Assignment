@@ -17,7 +17,7 @@ const MovieCard = props => {
         <div key={star} className="movie-star">
           {star}
         </div>
-      ))}
+      ))} 
     </div>
   );
 };
