@@ -11,7 +11,6 @@ const App = () => {
   const [movies, setMovies]= useState([]);
 
   useEffect(()=> {
-    // debugger
     axios
       .get("http://localhost:5000/api/movies")
       .then(res => setMovies(res.data))
@@ -21,7 +20,6 @@ const App = () => {
   const addToSavedList = movie => {
     setSavedList([...savedList, movie]);
   };
-  // debugger
 
   return (
     <>
